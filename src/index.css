@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  
+  --color-gold: #D4AF37;
+  --color-gold-hover: #bda031;
+  --color-charcoal: #1A1A1A;
+  --color-neutral-warm: #FDF8F5;
+  --color-border-warm: #E5DCD5;
+  --color-border-soft: #F2EAE4;
+
+  --color-rose-50: #fffbf9;
+  --color-rose-100: #fef5f0;
+  --color-rose-200: #fce7dc;
+  --color-rose-300: #fad1be;
+  --color-rose-400: #f7ad8d;
+  --color-rose-500: #ed7d52;
+  --color-rose-600: #db5c30;
+  --color-rose-700: #b5431d;
+  --color-rose-800: #903519;
+  --color-rose-950: #4a190a;
+}
+
+body {
+  background-color: #FDF8F5;
+  color: #2C2C2C;
+}
+
+/* Custom scrollbars for high fidelity matching the warm luxury brand look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FDF8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #E5DCD5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Print Styles */
+@media print {
+  /* Hide UI elements */
+  nav, button, .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
+

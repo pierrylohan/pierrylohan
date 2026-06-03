@@ -1,0 +1,6 @@
+{
+  "name": "Pedidos Cosméticos",
+  "description": "Sistema de pedidos para empresa de cosméticos com interface para cliente e painel administrativo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
